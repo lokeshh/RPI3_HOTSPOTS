@@ -28,7 +28,7 @@ echo "# -f    run in foreground" >> $x
 echo "DHCPD_OPTS=\"-S\"" >> $x
 sudo mv $x  /etc/default/udhcpd
 	#give the Pi a static IP address 
-sudo ifconfig wlan0 192.168.42.1
+#sudo ifconfig wlan0 192.168.42.1
 #------------SETUP Station Interface for Rt5370-------------------------------------
 touch $x
 sudo cp  /etc/network/interfaces /etc/network/interfaces.bk
