@@ -124,29 +124,3 @@ sudo update-rc.d dnsmasq enable
 sudo apt-get install udhcpc -y
 sudo cp ap.sh /usr/bin/ap
 sudo cp sta.sh /usr/bin/sta
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
