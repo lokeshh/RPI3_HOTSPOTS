@@ -112,8 +112,8 @@ sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -
 sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 sudo sh -c "iptables-save >> /etc/iptables.ipv4.nat"
 #------------------------------5. Fire it up! R----------------------------------------
-sudo service hostapd start
-sudo service udhcpd start
+#sudo service hostapd start
+#sudo service udhcpd start
 #-----------------------------6.get the hotspot to start on boot----------------------
 sudo update-rc.d hostapd enable
 sudo update-rc.d udhcpd enable
