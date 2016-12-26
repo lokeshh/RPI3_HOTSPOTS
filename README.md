@@ -26,3 +26,5 @@ example:
 ```bash
 sudo ap Mlabviet_wifi
 ```
+Bugs:
+- station mode somtime need to run more than 1 time or need to be restart the board
