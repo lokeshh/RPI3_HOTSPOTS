@@ -1,4 +1,4 @@
-#! /bin/bash
+dd#! /bin/bash
 if [ -z "$1" ] 
 then
   echo "No Input Name, select default name:ThanhLe_handsome"
@@ -18,7 +18,8 @@ else
   sudo sed -i -e "s/\(wpa=\).*/\1$x/" /etc/hostapd/hostapd.conf
   sudo sed -i -e "s/\(wpa_passphrase=\).*/\1$2/" /etc/hostapd/hostapd.conf
 fi
-
+dd="0"
+sudo sed -i -e "s/\(ignore_broadcast_ssid=\).*/\1$dd/" /etc/hostapd/hostapd.conf
 sudo /etc/init.d/hostapd stop
 sudo /etc/init.d/udhcpd stop
 sudo ifdown wlan0
