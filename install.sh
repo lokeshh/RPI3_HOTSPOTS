@@ -37,14 +37,14 @@ echo "auto lo" >> $x
 echo "iface lo inet loopback" >> $x
 echo "" >> $x
 echo "auto eth0" >> $x
-echo "iface eth0 inet dhcp" >> $x
+echo "iface eth0 inet manual" >> $x
 echo "" >> $x
 echo "allow-hotplug wlan0" >> $x
-echo "iface wlan0 inet dhcp" >> $x
+echo "iface wlan0 inet manual" >> $x
 echo "    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf" >> $x
-echo "    wireless-power off" >> $x
+#echo "    wireless-power off" >> $x
 echo "" >> $x
-echo "iface default inet dhcp" >> $x
+#echo "iface default inet dhcp" >> $x
 sudo chown --reference=/etc/network/interfaces $x
 sudo chmod --reference==/etc/network/interfaces $x
 sudo mv $x /etc/network/interfaces
