@@ -1,4 +1,4 @@
-dd#! /bin/bash
+#! /bin/bash
 if [ -z "$1" ] 
 then
   echo "No Input Name, select default name:ThanhLe_handsome"
