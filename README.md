@@ -1,5 +1,10 @@
 
+
 # RPI3_HOTSPOTS
+Feature:
+ - Can install while wlan0 is connected to network.
+ - easy to switch betwwen stattion mode and hotspot mode.
+ - can share internet between eth0 and wlan0, can be config to share with wlan1 or ...
 Introduction:
 - This tutorial will guide you steps to setup the Wifi module of  raspberry pi 3 work with Station and Access Point mode, you can easily switch between station mode and AP mode.
 Setup:
