@@ -1,8 +1,15 @@
 #! /bin/bash
-a="\"$1\""
-b="\"$2\""
-sudo sed -i -e "s/\(ssid=\).*/\1$a/" /etc/wpa_supplicant/wpa_supplicant.conf 
-sudo sed -i -e "s/\(psk=\).*/\1$b/" /etc/wpa_supplicant/wpa_supplicant.conf
+
+if [ -z "$1" ] && [ -z "$2" ] 
+then
+  echo "Connect using current information"
+else
+  a="\"$1\""
+  b="\"$2\""
+  sudo sed -i -e "s/\(ssid=\).*/\1$a/" /etc/wpa_supplicant/wpa_supplicant.conf 
+  sudo sed -i -e "s/\(psk=\).*/\1$b/" /etc/wpa_supplicant/wpa_supplicant.conf
+fi
+
 sudo /etc/init.d/hostapd stop &&
 sudo /etc/init.d/udhcpd stop &&
 sudo ifdown wlan0 &&
