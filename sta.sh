@@ -21,4 +21,5 @@ sudo rm -rf /etc/network/interfaces
 sudo cp /etc/network/interfaces.sta /etc/network/interfaces
 sudo ifconfig wlan0 up &&
 sudo service dhcpcd try-restart &&
+sudo ifdown wlan0 &&
 sudo ifup wlan0
