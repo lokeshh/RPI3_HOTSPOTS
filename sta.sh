@@ -23,7 +23,7 @@ sudo rm -rf /etc/network/interfaces
 sudo cp /etc/network/interfaces.sta /etc/network/interfaces
 
 sudo /etc/init.d/dhcpcd start &&
-sudo /etc/init.d/dnsmasq start **
+sudo /etc/init.d/dnsmasq start &&
 sudo service dhcpcd status &&
 sudo service dnsmasq status &&
 sudo ifdown wlan0 &&
