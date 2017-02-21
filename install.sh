@@ -80,6 +80,7 @@ echo "update_config=1" >> $x
 echo "network={" >> $x
 echo "        ssid=\"Robotbase\"" >> $x
 echo "        psk=\"Do@nket201234\"" >> $x
+echo "        key_mgmt=WPA-PSK" >> $x
 echo "}" >> $x
 sudo mv $x /etc/wpa_supplicant/wpa_supplicant.conf
 
