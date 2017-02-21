@@ -1,6 +1,6 @@
 
 # RPI3_HOTSPOTS
-Feature:
+Features:
  - Can install while wlan0 is connected to network.
  - easy to switch betwwen stattion mode and hotspot mode.
  - can share internet between eth0 and wlan0, can be config to share with wlan1 or ...
