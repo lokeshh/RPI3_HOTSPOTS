@@ -10,7 +10,7 @@ Introduction:
 Setup:
 ```bash
 git clone https://github.com/quangthanh010290/RPI3_HOTSPOTS.git
-./install.sh
+sudo ./install.sh
 ```
 Test:
 - Station mode: sudo sta [SSID] [password] - Connect to a network with specific ssid name and password
