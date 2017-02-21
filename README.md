@@ -1,5 +1,4 @@
 
-
 # RPI3_HOTSPOTS
 Feature:
  - Can install while wlan0 is connected to network.
@@ -35,4 +34,5 @@ sudo ap my_ssid 12345678
 sudo ap Mlabviet_wifi
 ```
 Bugs:
-- station mode somtime need to run more than 1 time or need to be restart the board
+- station mode somtime need to run more than 1 time or need to be restart the board.
+- work with 2.4GHz wifi(RPI3 not support 5GHz wifi) 
