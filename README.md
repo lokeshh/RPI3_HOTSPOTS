@@ -25,6 +25,10 @@ sudo sta mySSID  myPass
 sudo sta
 ```
 - AP mode: sudo ap [SSID] [pass] - Create an wifi hotspot with specific ssid and pass
+,example: 
+```bash
+sudo ap my_ssid 12345678
+```
 - AP mode: sudo ap [SSID]  - Create an wifi hotspot with specific ssid and no pass
 ,example: 
 ```bash
