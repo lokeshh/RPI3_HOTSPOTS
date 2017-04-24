@@ -6,8 +6,8 @@ auto eth0
 iface eth0 inet dhcp
 
 iface wlan0 inet static
-    address 192.168.42.1
-    netmask 255.255.255.0
+    address 172.16.20.1
+    netmask 255.255.252.0
     wireless-power off
 
 iface default inet dhcp
